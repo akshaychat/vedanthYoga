@@ -11,7 +11,7 @@ body{
     background-image: url('../images/landing-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 100%;
+    background-position: 40%;
     height: 775px;
 }
 
@@ -72,6 +72,7 @@ img.yoga-girl {
 
 .yoga-is-life{
     margin-left: 3%;
+    display: flex;
 }
 
 .yoga-is-life h1{
@@ -79,6 +80,9 @@ img.yoga-girl {
     font-family: 'Roboto Slab', serif;
 }
 
+.why-vedant-yoga{
+    background-color: #f7fbf9;
+}
 .why-vedant-yoga .content{
     padding: 7%;
 }
