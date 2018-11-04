@@ -35,6 +35,7 @@ body{
 
 #oval_parent{
     overflow:hidden;
+    background-color: #f7fbf9;
 }
 
 #oval {
@@ -85,6 +86,7 @@ img.yoga-girl {
 }
 .why-vedant-yoga .content{
     padding: 7%;
+    padding-right: 10%;
 }
 
 .why-vedant-yoga h1{
@@ -94,20 +96,29 @@ img.yoga-girl {
 }
 
 .why-vedant-yoga p, .why-vedant-yoga ul li{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #2a2a2a;
     margin:3% 0%;
-    font-weight: lighter;
 }
 
 .read-more{
     background-image: linear-gradient(122deg, #4fb783, #409d9b);
-    border-radius: 35px;
+    border-radius: 31px;
     border-bottom-right-radius: 0px;
+    width: 220px;
+    height: 62px;
     padding: 21px 59px;
+    font-size: 18px;
+    font-weight: 500;
     margin-top: 5%;
     color: #fff;
     box-shadow: none;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
  }
 
  .oval-2 {
@@ -116,4 +127,23 @@ img.yoga-girl {
     border-radius: 461px;
     margin:17% 0% 0% 17%;
     background-color: #edfaf4;
+    
   }
+
+  .why-vedant-yoga-image-section{
+    padding:0 81px; 
+  }
+
+.bg-dotted-circles{
+    margin-left: 349px;
+    margin-top: 85px;
+}
+
+.irregular-shape-blue{
+    margin-left: 641px;
+}
+
+.bg-concentric-circles-1{
+    float: right;
+    margin-top: -21%;
+}
