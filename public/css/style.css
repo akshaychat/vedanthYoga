@@ -2,25 +2,40 @@ body{
     color: #2a2a2a;
     font-family: 'Raleway', sans-serif;
 }
-.top-section{
-  width: 100%;
-  background-image: linear-gradient(122deg, #4fb783, #409d9b);
-  padding-top: 1%;
+.home-section{
+    background-color: #f7fbf9;
+}
+.home-section section{
+    height: 100vh;
+    position: relative;
+    padding: 64px 0px 64px 0px;
+}
+.landing-banner{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    height: 100vh;
+    padding-top: 16px;
+}
+.landing-banner:before{
+    content:'';
+    position:absolute;
+    top:0; 
+    left:-25%; 
+    bottom:4px;
+    width: 150%;
+    background-image: linear-gradient(122deg, #4fb783, #409d9b);
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    z-index:-1;   
 }
 .bg-img{
     background-image: url('../images/landing-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 40%;
-    height: 775px;
+    height: 690px;
 }
-
-.heading-top-section{
-    color: #fff;
-    margin: auto;
-    margin-top: 25%;
-}
-
 .navbar{
     padding:  17px 60px;
 }
@@ -30,73 +45,78 @@ body{
 }
 
 .navbar-nav li{
-    padding: 0 32px;
+    padding: 12px;
 }
-
-#oval_parent{
-    overflow:hidden;
-    background-color: #f7fbf9;
-}
-
-#oval {
-    width: 100%;
-    height: 218px;
-    margin-top: -6%;
-    background-image: linear-gradient(122deg, #4fb783, #409d9b);
-    -moz-border-radius: 100px / 50px;
-    -webkit-border-radius: 150px / 75px;
-    border-radius: 925px / 146px;
-}
-
-.yoga-girl{
-    margin-left: 65%;
-    margin-top: 20%;
-}
-
-img.yoga-girl {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-img.yoga-girl {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-
-
-.yoga-is-life{
-    margin-left: 3%;
-    display: flex;
-}
-
-.yoga-is-life h1{
+h1{
+    color: #4fb783;
     font-weight: bolder;
     font-family: 'Roboto Slab', serif;
 }
-
-.why-vedant-yoga{
+p{
+    font-size: 18px;
+}
+.btn{
+    background-image: linear-gradient(122deg, #4fb783, #409d9b);
+    border-radius: 31px;
+    border-bottom-right-radius: 0px;
+    height: 62px;
+    padding: 21px 59px;
+    margin-top: 8px;
+    border: 0px;
+}
+.bg-bluetint{
+    background: #f7fbf9 !important;
+}
+.bg-white{
+    background: #fff !important;
+}
+.text-green{
+    color: #4fb783;
+}
+/*------------------------------Landing Banner---------------------------*/
+.landing-banner-content{
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+}
+.landing-banner-text{
+    color: #fff;
+    padding-left: 5%;
+}
+.landing-banner-text h1{
+    color: #fff;
+}
+.landing-banner-illus{
+    position: absolute;
+    right: -2%;
+    top: 25%;
+}
+.landing-banner-illus img{
+    width: 50%;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+/*------------------------------Landing Banner END---------------------------*/
+/*------------------------------Why Vedanth Yoga---------------------------*/
+.why-section{
     background-color: #f7fbf9;
+    height: 100vh;
+    align-items: center;
 }
-.why-vedant-yoga .content{
-    padding: 7%;
-    padding-right: 10%;
+.why-section .content{
+    
 }
 
-.why-vedant-yoga h1{
+.why-section h1{
     color: #4fb783;
     font-weight: bolder;
     font-family: 'Roboto Slab', serif;
 }
 
-.why-vedant-yoga p, .why-vedant-yoga ul li{
-    font-size: 18px;
+.why-section p, .why-section ul li{
+    font-size: 17px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -105,20 +125,8 @@ img.yoga-girl {
     color: #2a2a2a;
     margin:3% 0%;
 }
-
 .read-more{
-    background-image: linear-gradient(122deg, #4fb783, #409d9b);
-    border-radius: 31px;
-    border-bottom-right-radius: 0px;
-    width: 220px;
-    height: 62px;
-    padding: 21px 59px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 5%;
-    color: #fff;
-    box-shadow: none;
-    letter-spacing: 1.2px;
+    
  }
 
  .oval-2 {
@@ -144,6 +152,101 @@ img.yoga-girl {
 }
 
 .bg-concentric-circles-1{
-    float: right;
-    margin-top: -21%;
+    position: absolute;
+    right: 0px;
+    top: 300px;
+    z-index: 1;
 }
+.bg-green-pattern-1{
+    position: absolute;
+    left: 0px;
+    top: -150px;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .yoga-girl{
+        margin: 0px;
+    }
+}
+/*------------------------------Why Vedanth Yoga END---------------------------*/
+/*------------------------------Benefits of Yoga---------------------------*/
+.benefits{
+    align-content: center;
+}
+.benefits .content{
+    margin: 64px 0px 0px 0px;
+    padding: 0px 64px 0px 64px;
+    align-content: center;
+}
+.benefits-points{
+    margin-bottom: 72px;
+    position: relative;
+}
+.benefits-points .benefits-points-content{
+    z-index: 1;
+}
+.benefits .margin-inner{
+    margin-left: 36px;
+}
+.benefits-points .icon-circle{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background: #F6FEFA;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+/*------------------------------Benefits of Yoga END---------------------------*/
+/*------------------------------Our Programs---------------------------*/
+.our-programs{
+    align-items: center;
+    position: relative;
+}
+.our-programs .our-programs-container{
+    height: 70vh;
+    position: relative;
+    background: linear-gradient(122deg, #4fb783, #409d9b);
+    width: 80%;
+    float: right;
+    border-top-left-radius: 35vh;
+    border-bottom-left-radius: 35vh;
+}
+.our-programs-illus{
+    position: absolute;
+    top: 200px;
+    left: -90px;
+}
+.our-programs-container .content{
+    color: #fff;
+}
+.our-programs .slick-initialized .slick-slide {
+    display: block;
+    background: #Fff;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0px 16px 0px 0px;
+}
+.our-programs .programs-content{
+    padding: 24px;
+}
+/*------------------------------Our Programs END---------------------------*/
+/*------------------------------Gallery---------------------------*/
+
+/*------------------------------Gallery END---------------------------*/
+/*------------------------------Contact Us---------------------------*/
+
+/*------------------------------Contact Us END---------------------------*/
+/*------------------------------Footer---------------------------*/
+
+/*------------------------------Footer END---------------------------*/
+/*------------------------------Animations---------------------------*/
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+/*------------------------------Animations END---------------------------*/
